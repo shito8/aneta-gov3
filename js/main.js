@@ -123,7 +123,7 @@
 
 	
 	async function countCardano1() {
-		let vote1 = document.getElementById("cardano2");
+		let vote1 = document.getElementById("cardano1");
 		let cantToken = 0;
 		
 		try {
@@ -143,13 +143,13 @@
 				})
 				.then((data) => {
 					const tokens = data.received_sum;
-					console.log(tokens);
+					//console.log(tokens);
 					const result = tokens.find((token) => token.unit === policyIdAssetCVote);
 					
 					if (result) {
 						cantToken = result.quantity;
 						cantToken = new Intl.NumberFormat("en").format(cantToken);
-						console.log(cantToken);
+						//console.log(cantToken);
 					} else{
 						cantToken = 0;
 					}
@@ -187,13 +187,13 @@
 				})
 				.then((data) => {
 					const tokens = data.received_sum;
-					console.log(tokens);
+					//console.log(tokens);
 					const result = tokens.find((token) => token.unit === policyIdAssetCVote);
 					
 					if (result) {
 						cantToken2 = result.quantity;
 						cantToken2 = new Intl.NumberFormat("en").format(cantToken2);
-						console.log(cantToken2);
+						//console.log(cantToken2);
 					} else{
 						cantToken2 = 0;
 					}
@@ -230,13 +230,13 @@
 				})
 				.then((data) => {
 					const tokens = data.received_sum;
-					console.log(tokens);
+					//console.log(tokens);
 					const result = tokens.find((token) => token.unit === policyIdAssetCVote);
 					
 					if (result) {
 						cantToken3 = result.quantity;
 						cantToken3 = new Intl.NumberFormat("en").format(cantToken3);
-						console.log(cantToken3);
+						//console.log(cantToken3);
 					} else{
 						cantToken3 = 0;
 					}
