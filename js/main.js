@@ -32,7 +32,7 @@
 	let middle = "sqtjWK4C4HRh05xQNt"
 
 
-	const idErgo = "eVOTE3";
+	const idErgo = "eVOTE3_1";
 
 	const policyIdAssetCVote =
 		"b5428f01743ac95f122b60730cf50f73d4598a02f08540b63d7015ca63564f544533";
